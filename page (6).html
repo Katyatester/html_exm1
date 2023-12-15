@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Console Usage</title>
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=f3Y7-R-OpeEoLXkO9CRjCj8xfSQYx5Lq3WX-UZOwirV-7WIK6HkH5iK91l7dmSKOZ5Hq3PHwq7XnYetYP4Qb4mWT9awma6W6FUikeQ3m1z0xjsTgt14py2shi73RdRhTKK0NXY8YhQqphRavXAsUtANpl0dK8jS3OqqDbIvSMgVXXOFEzjQ5ewQSF3i9FYvGvsovpat9xR0jJ9-6_OrFU62UERQh-vlQRTuFyPdzSt0zbz2fqshoqF6CsWIRnjsI5wnQNSwYZBTE4fkJ0Tv4v4ZYoQ-fnUFiMrRsai4_5kkA2Dv6s9pAeYqAjpdT4DrGhQ8-Hh7zJnVXBWmN52kkOHAL2y5kACQwsixQL2hualrQaaIBQny9EEnI5y3g2HFxntwX5h-nzoLnO8XGUZ5JDS9PwKHMd4D-tSgaXkgX5YUGddlkOJ2l3LFF_KZ6q3HgzTgkiutp_IrRpxYSJQSdl7juHRbcyrLLEUBc1AxjHZ3v4p8EAcXNg04V9lWGzQoADM4SuPL3O4NgDPxiak9NnKqekMHm6ZNP5cadTaSDDh1CwxWRR2HOLxRpqr6j9igzfr8nDbfE_7I8tUyTPft0EpXuouXJ05HtdO6rmP6hioGwtbiREqUF-76aHN7HzQwwWlzMjbCgm-rvQyA3uS7dCWmPQPAhiPp0LR9huikTAKs91Yhh_s5ET59uc5x79_Z0_IclFrjWP90OAlz8XnnZotjVS7rvUDjJZ3KTiiwZSCIRp0v6T_jnVxLiTK7rHpZ8i9vi0LHZiANhy2YJeU3v9Im56I_DO3wR1QzNrdDrqy79E7aPsAvk8O-a3dHa8m3ZOydv2bcTWrNAO1uam0TCPLmhTkhABTi9S3Y5pOti6ANDvHntmMD83a-wNFkKo79rrG_rE7Q-9c9liVRqy1Hns5_gTQ2DZaGXK9kh_K7zUKvcprbHugQjdy52D3P8G97CS1Z__7_OvVmM9FLNoZ3vNO7ynf--h8HE7mJXDGfuapZTE42-1VF3j0VJNNB-6tKocht_JUrJGDkcQDZjS8uyYZcIqDw5jEihiQMq1XMCLAn9t79AWPwrA0oLZjtBbg75h_mRafTWir3HHka3QN5FEfGQLLziyR3HspG6tjzHmO64MbxSKbL1BsI0QwSBu6VL0PurgOURDdC0JZRR3gFn1Qmh8q6ldpv8VRrjS1SD9VFd5YH2S0o-vF7mPzgz_x2qplpfcTMBlPJ7YF5_zk-hFYVM9JRBZf8LeNuvQjOkbpk8FBeqO2piiK5zWkqnAh6ImKKBlN8aogPztj6xQbRxxO2scvsTCnuQ5IIYqW40DNL2n88nrvzH4wzoyx-6ZSu8xGIYyTUcvfrsOyk9oC-O6aPAElML94n-Uf3_kMD9yYmvyZjGiQPNxiw4A2HEM1mq3rBTMQILnxy5YHHRIqyveH0uhv5uHz4ml2IVXOePeREtmOxKF3fqTyAVQkNXHvd5GJsLIgJ4ML3N2W9vxkf4QnKVVlkqccwjQ4TDbYBLE1RvByWsB1MlYGTS8ofDbiJXgH2fjQ50ith9TtsoEK0JvI4Wd4XwIFvaRzr_VPxGN5BITLALjw6jeMboSI0Hl9zsMi9rbpn6a9XjEQMf_LubrOcQHpMijvtTQ_jWQzW1yQ6ik1BMvJJlKIDYX3K6jDkE1XCbUQMUWMjhLzwSBOlGzg" charset="UTF-8"></script></head>
+  <body>
+    <h1>Hello, users!</h1>
+    <script>
+      console.log('Loading!');
+      const h1 = document.querySelector('h1');
+      console.log(h1.textContent);
+      console.assert(document.querySelector('h2'), 'h2 not found!');
+      const users = [
+        {
+          first: 'Anna',
+          last: 'Ivanova'
+        },
+        {
+          first: 'Ivan',
+          last: 'Petrov'
+        },
+        {
+          first: 'Andrey',
+          last: 'Norman'
+        }
+      ];
+      console.table(users);
+      setTimeout(() => {
+        h1.textContent = 'Hello, Console!';
+        console.log(h1.textContent);
+      }, 5000);
+    </script>
+  </body>
+</html>

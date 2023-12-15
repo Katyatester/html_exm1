@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Console Usage</title>
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=CXa_jPnY0BAWTcPDVSKrRStAY9uDLohoURgJG4RcQ3IRgHgrw4KPSNQMjR9usn2AeNqY-DQfEJMx3kpAFwr1Z9xvu7hyn23WMEus6dmd4KIXILRiyzKRBO3qbjUR8i5danfGZCapMmq0kLI_mBhcKVfbF1wOOazcR0A5oQztciMLvfUxNPTUngD-RhDPPNXrmX71lQWt2BpYmoLIwAexZPAUouTC4t4tlAAj-TQwfL7CYyI686T9Z62rN-ucuvxiMhApX7MtmwBzvWTifxm8f29Z8PkM2Mw9Z6HDaaFv8xzXvuedwJCZl4HDMPt9eVR3c3w_ktDkBgCI2sbAHhevXIP3z5Fq2jJoAV9CQLxY6Isp5TP9eYUaRTilsUhk-K56O9obeWkXxwCfGvzHf300oWN5q7LoevyO3UFhYyXKBMGbwl7_xv2BViqyl8zy9c9IfKC3KblEhkA-J8izuGxHXR3vr0mIyN2NSM8873_vme0gMjv8z7VUJtMhhkoSDtA2beRP2d-cAHjc1tuw8YpFmgIz9UtWRnfglHHEJpPCCqQCHNgJd1hA3h-omuuQbaSIO9PUNQGo0eMFbPLOFwMwFh5Y8SREq_DeCJqD5tR6fqx2ji0aMTbidtTDx_f4cFLlshPduWIwgMQOnar1Eu9jSTMn4IkdIa3dP0EXlVDmsqCsyRfUzsj-RKfqzrmNJA70w4OF_5a9t8LnqDMJ0hD5hdGW_oC1ggZlwdwuBSAFYjscwxDrgHTHkxyu95aAeeAY3jw8ulifCFQy3E64AiduWI3_NOAVehJKOykD_562gbLA2o0GHZa2Ne53nSnsFKz-3pzJyeLv-jGFwmt5ZVV7w71pRcZTf0bOIJ49k5RPgpaNQl_yrYwi9QMYwJXlTJ6YKZqoR24_GPOIVATht-yBB-nsjiCiog0Zz_gxBvzS0mZq1QrIKb_AyT4tts6z02nBIkcpkEOuepgHVKpFmWk6aDgbDao4grGfvrpHibaAo1uL4Fd9ND0HbbFbtkFZYSMNCV9pd-jfK9U1G08swFfUBDjIpePJA8R6wcW1KBPM4fV-5dS0RUy5bDIWoS-DDv_0VlZIltiO1evJxiZPcX-oF9ZuiJQIuzyjoTp6-Lwy3GySDBeG60ezdBxZSgCIQmjgDdDYNfPtzsjBGKEVMtzJ7ry3FIs9Nuk-MWmvKw2oex14WGjx2aGz2vtyThNhPysz2NSBmwedXfw8zaFPU2IG6PLBPm_q2n-yG0uMUJ6Tsb8FvSN71hj55JE5zrDjNSgdwPOwPi9CY_4LsWRGo3xfnzFwZXwgUbhieuRVxd4bp1G06TVcR8A8khv-dxsGvqn04jQ9ve5ZVxEIiVdNWdBRVfyQ8tXc-k1uPCylwdGkKtsd8w4t3jZuhNskRzVEhkgu9rQiNRFjg8xKRxUCNljyo7Xri0pcfL7KUEDhiMJ8PDryufTr4glSSe3c24H9SvJMTfxQ3Xiio-kIgIpoSUvoPwFEo69L7X8zoDXLr9sNINfT9fa4M0VkGne55zD-KmrTN8veqDzS55DkMtDl-xNG6udL0pcQ0MVOgD8Hm7-whKY" charset="UTF-8"></script></head>
+  <body>
+    <h1>Hello, users!</h1>
+    <script>
+      console.log('Loading!');
+      const h1 = document.querySelector('h1');
+      console.log(h1.textContent);
+      console.assert(document.querySelector('h2'), 'h2 not found!');
+      const users = [
+        {
+          first: 'Anna',
+          last: 'Ivanova'
+        },
+        {
+          first: 'Ivan',
+          last: 'Petrov'
+        },
+        {
+          first: 'Andrey',
+          last: 'Norman'
+        }
+      ];
+      console.table(users);
+      setTimeout(() => {
+        h1.textContent = 'Hello, Console!';
+        console.log(h1.textContent);
+      }, 5000);
+    </script>
+  </body>
+</html>
